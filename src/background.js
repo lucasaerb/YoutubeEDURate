@@ -1,5 +1,8 @@
 console.log("In background!");
+
 chrome.browserAction.onClicked.addListener(buttonClicked);
+chrome.tabs.onUpdated.addListener(tabChange);
+
 
 function buttonClicked(tab){
     console.log(tab);
@@ -7,4 +10,11 @@ function buttonClicked(tab){
       "txt" : "activate"
     }
     chrome.tabs.sendMessage(tab.id,msg);
+}
+
+function tabChange(tab, info,returnTab){
+    let msg = {
+      "txt" : "activate"
+    }
+    chrome.tabs.sendMessage(returnTab.id, msg);
 }
