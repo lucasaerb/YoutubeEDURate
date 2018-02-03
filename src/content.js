@@ -1,9 +1,10 @@
-console.log("Chrome extension GO!!!");
+console.log("In the extension!!");
 
-let titles = document.getElementsByTagName("ytd-grid-video-renderer");
-//titles = titles.getElementsByClassName("yt-simple-endpoint style-scope ytd-grid-video-renderer");
-//console.log("NEW Titles is: " + titles + '\n');
-for(elt of titles){
-  console.log("elt:\n");
-  console.log(elt);
+let a_tags = document.getElementsByTagName('a')
+
+//let titles = a_tags.getElementById('title');
+for(elm of a_tags){
+  if (elm.id == "video-title"){
+    console.log(elm.title);
+  }
 }
