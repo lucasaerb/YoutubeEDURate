@@ -3,7 +3,6 @@ console.log("In background!");
 chrome.browserAction.onClicked.addListener(buttonClicked);
 chrome.tabs.onUpdated.addListener(tabChange);
 
-
 function buttonClicked(tab){
     console.log(tab);
     let msg = {
