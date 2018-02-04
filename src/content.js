@@ -41,7 +41,22 @@ function getrating(title){
     }
   }
   //console.log("TITLE>LENGTH: "+ title.split(/(\s+)/).length);
-  return Math.round( rate_count / titleArray.length * 135 );
+  tempRate = rate_count / titleArray.length * 100;
+  if (titleArray.length < 5){
+    tempRate = 12.11;
+  }
+  if (tempRate > 21){
+    tempRate += 30;
+    if (tempRate >= 100){
+      tempRate = 94.1;
+    }
+    return Math.round(tempRate);
+  }
+  else{
+    return Math.round(tempRate);
+  }
+
+
 }
 
 chrome.runtime.onMessage.addListener(message);
