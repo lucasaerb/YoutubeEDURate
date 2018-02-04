@@ -2,7 +2,7 @@
 
   "name" : "EDUrate",
   "manifest_version" : 2,
-  "version" : "0.0.1",
+  "version" : "1.3.2",
   "description" : "An extension designed to rate YouTube videos on its educational value",
 
   "browser_action" :{
