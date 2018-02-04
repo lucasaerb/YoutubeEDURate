@@ -1,4 +1,4 @@
-##	EDURate - Youtube
+##	EDUrate - Youtube
 ##	Making Youtube More Educational Through Chrome Extensions and Real-Time Youtube Feed Injections
 
 **EDUrate** is a **lightweight chrome browser extension** that interfaces directly with your Youtube.com content feed in order to inject accurate ratings (0%-100%) on the educational value of the content you are being shown. Inspiration for this project came from our love for the immmense learning potential of YouTube, but great distaste for the constant distractions that suggested  uneducational videos are from the learning workflow. 
