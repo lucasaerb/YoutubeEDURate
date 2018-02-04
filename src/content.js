@@ -1,9 +1,10 @@
+let wordList = read();
 function getTitles(){
   let a_tags = document.getElementsByTagName('a');
   for(elm of a_tags){
     if (elm.id == "video-title"){
-      var i =  getrate(elm.title.toLowerCase());
-      elm.innerHTML = "EDUrate:  ".bold()+ i + "%  ||   " + elm.title;
+      var rating =  getrating(elm.title.toLowerCase());
+      elm.innerHTML = "EDUrate:  ".bold()+ rating + "%  ||   " + elm.title;
     }
   }
 }
@@ -19,16 +20,16 @@ function read(){
   return this;
 }
 
-function getrate(title){
+function getrating(title){
   var rate_count = 0;
-  let txt = read();
 
-  for(i in txt){
+  for(i in wordList){
     if(title.includes(i)){
       rate_count += 1;
     }
   }
-  return (rate_count/title.length)*100;
+  //console.log("TITLE>LENGTH: "+ title.split(/(\s+)/).length);
+  return Math.round((rate_count/title.split(/(\s+)/).length)*100);
 }
 
 chrome.runtime.onMessage.addListener(message);
