@@ -1,11 +1,22 @@
+
+addEventListener('scroll',scrollevent);
+function scrollevent(){getTitles();}
+
 function getTitles(){
   let a_tags = document.getElementsByTagName('a');
   for(elm of a_tags){
     if (elm.id == "video-title"){
       var i =  getrate(elm.title.toLowerCase());
-      elm.innerHTML = "EDUrate:  ".bold()+ i + "%  ||   " + elm.title;
+      elm.innerHTML = "EDUrate:  ".bold().big()+ i.toString().bold().big() + "% ".bold().big() +" ||   " + elm.title;
     }
   }
+  let b_tags = document.getElementsByTagName('span');
+      for(elm of b_tags){
+        if (elm.id == "video-title"){
+          var i =  getrate(elm.title.toLowerCase());
+          elm.innerHTML = "EDUrate:  ".bold().big()+ i.toString().bold().big() + "% ".bold().big() +" ||   " + elm.title;
+        }
+      }
 }
 
 function read(){
