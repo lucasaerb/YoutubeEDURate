@@ -5955,8 +5955,6 @@ seek
 celestial orbit
 landing field
 brighten
-roleplay
-open fire
 musical theme
 divide
 fireplace
@@ -6002,7 +6000,6 @@ thought
 wind up
 lifting device
 pet
-flash
 tolerate
 chip
 celebrate
@@ -6011,7 +6008,6 @@ detect
 pretending
 field of operations
 quash
-chafe
 beverage
 typography
 chevy
@@ -6064,7 +6060,6 @@ shore
 bandaging
 vividness
 cloth
-fag out
 apply
 folk music
 fend
@@ -6080,7 +6075,6 @@ smart
 advantage
 consult
 humourist
-die
 heterogeneousness
 flora
 comrade
@@ -6092,7 +6086,6 @@ brass instrument
 Gospel According to Mark
 maestro
 impaction
-eff
 gradient
 caput
 licence
@@ -6121,7 +6114,6 @@ swim
 principle
 divagate
 filiation
-pct
 implement
 calling
 hurtle
@@ -6170,7 +6162,6 @@ swing
 Saint Mark
 fiber
 freebooter
-con
 mechanical device
 flush
 transit
@@ -6191,7 +6182,6 @@ stick in
 bottom
 developing
 makeup
-head
 due process of law
 reconnoitre
 comeback
@@ -6204,7 +6194,6 @@ combine
 tutelage
 atmospheric condition
 Wood
-try out
 proceedings
 mental hospital
 journeying
@@ -6245,7 +6234,6 @@ deftness
 box
 juvenile
 take note
-jock
 phonograph record
 request
 charm
@@ -6464,7 +6452,6 @@ enhance
 barter
 north korea
 feign
-movie
 perspective
 act up
 knitting stitch

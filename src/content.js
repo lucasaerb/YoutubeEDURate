@@ -8,14 +8,14 @@ function getTitles(){
   for(elm of a_tags){
     if (elm.id == "video-title"){
       var i =  getrating(elm.title.toLowerCase());
-      elm.innerHTML = "EDUrate:  ".bold().big()+ i.toString().bold().big() + "% ".bold().big() +" ||   " + elm.title;
+      elm.innerHTML = ("EDUrate:  " + "<img src=\"https://raw.githubusercontent.com/lucasaerb/YoutubeEDURate/master/icons/logoZoom.png\" height=\"15px\" width=\"15px\">" + i.toString() + "% ").bold().big() + "    " + elm.title;
     }
   }
   let b_tags = document.getElementsByTagName('span');
       for(elm of b_tags){
         if (elm.id == "video-title"){
           var i =  getrating(elm.title.toLowerCase());
-          elm.innerHTML = "EDUrate:  ".bold().big()+ i.toString().bold().big() + "% ".bold().big() +" ||   " + elm.title;
+          elm.innerHTML = ("EDUrate:  "+ "<img src=\"https://raw.githubusercontent.com/lucasaerb/YoutubeEDURate/master/icons/logoZoom.png\" height=\"15px\" width=\"15px\">" + i.toString() + "% ").bold().big() + "    " + elm.title;
         }
       }
 }
@@ -42,9 +42,6 @@ function getrating(title){
   }
   //console.log("TITLE>LENGTH: "+ title.split(/(\s+)/).length);
   tempRate = rate_count / titleArray.length * 100;
-  if (titleArray.length < 5){
-    tempRate = 12.11;
-  }
   if (tempRate > 21){
     tempRate += 30;
     if (tempRate >= 100){
