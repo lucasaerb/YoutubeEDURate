@@ -34,7 +34,7 @@ function read(){
 function getrating(title){
   var rate_count = 1;
   var titleArray = title.split(/[ ,]+/);
-  console.log(titleArray);
+  
   for(i in wordList){
     if(title.includes(i.toLowerCase())){
       rate_count += 1;
