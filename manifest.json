@@ -6,7 +6,7 @@
   "description" : "An extension designed to rate YouTube videos on its educational value",
 
   "browser_action" :{
-    "default_icon" : "icons/icon19.png"
+    "default_icon" : "icons/logoZoom.png"
 },
 
   "content_scripts":[
