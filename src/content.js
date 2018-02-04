@@ -26,7 +26,7 @@ function read(){
   xmlhttp.onreadystatechange = function(){
   if(xmlhttp.status == 200 && xmlhttp.readyState == 4){}
   };
-  xmlhttp.open("GET","https://raw.githubusercontent.com/lucasaerb/YoutubeEDURate/master/wordList.txt" ,true);
+  xmlhttp.open("GET","https://raw.githubusercontent.com/lucasaerb/YoutubeEDURate/master/src/wordList.txt" ,true);
   xmlhttp.send();
   return this;
 }
@@ -34,7 +34,7 @@ function read(){
 function getrating(title){
   var rate_count = 1;
   var titleArray = title.split(/[ ,]+/);
-  
+
   for(i in wordList){
     if(title.includes(i.toLowerCase())){
       rate_count += 1;
